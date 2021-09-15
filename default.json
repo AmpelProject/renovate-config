@@ -1,0 +1,32 @@
+{
+  "extends": [
+    "config:base"
+  ],
+  "schedule": "every 1 month on Monday before 5am",
+  "automerge": true,
+  "automergeType": "branch",
+  "lockFileMaintenance": {
+    "enabled": true
+  },
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "groupName": "minor updates"
+    },
+    {
+      "matchUpdateTypes": ["major"],
+      "automerge": false
+    },
+    {
+      "matchDepTypes": ["dev-dependencies"],
+      "groupName": "dev dependencies",
+      "rangeStrategy": "bump"
+    },
+    {
+      "matchPackagePatterns": ["^ampel-.*"],
+      "schedule": null,
+      "groupName": "ampel packages",
+      "rangeStrategy": "bump"
+    }
+  ]
+}
