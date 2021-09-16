@@ -1,7 +1,7 @@
 {
   "extends": [
     "config:base",
-    ":semanticCommits",
+    ":semanticCommits"
   ],
   "schedule": "every 1 month on Monday before 5am",
   "automerge": true,
