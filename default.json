@@ -9,6 +9,7 @@
   "lockFileMaintenance": {
     "enabled": true
   },
+  "masterIssue": true,
   "packageRules": [
     {
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
