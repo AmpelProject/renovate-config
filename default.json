@@ -3,11 +3,12 @@
     "config:base",
     ":semanticCommits"
   ],
-  "schedule": "every 1 month on Monday before 5am",
+  "schedule": "every 4th week on Thursday before 10am",
   "automerge": true,
   "automergeType": "branch",
   "lockFileMaintenance": {
-    "enabled": true
+    "enabled": true,
+    "schedule": ["every 8th week on Thursday before 10am"]
   },
   "masterIssue": true,
   "packageRules": [
