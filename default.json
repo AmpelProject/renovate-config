@@ -14,17 +14,22 @@
   "rangeStrategy": "widen",
   "packageRules": [
     {
+      "matchDepTypes": ["dev-dependencies"],
+      "groupName": "dev dependencies",
+      "rangeStrategy": "bump"
+    },
+    {
+      "matchManagers": ["github-actions"],
+      "groupName": "actions",
+      "rangeStrategy": "auto"
+    },
+    {
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "groupName": "minor updates"
     },
     {
       "matchUpdateTypes": ["major"],
       "automerge": false
-    },
-    {
-      "matchDepTypes": ["dev-dependencies"],
-      "groupName": "dev dependencies",
-      "rangeStrategy": "bump"
     },
     {
       "matchPackagePatterns": ["^ampel-.*"],
