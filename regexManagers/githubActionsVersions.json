@@ -1,0 +1,15 @@
+{
+  "extends": ["regexManagers:githubActionsVersions"],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": [
+        "(^|/)(workflow-templates|\\.(?:github|gitea|forgejo)/(?:workflows|actions))/.+\\.ya?ml$",
+        "(^|/)action\\.ya?ml$"
+      ],
+      "matchStrings": [
+        "# renovate: datasource=(?<datasource>[a-z-.]+?) depName=(?<depName>[^\\s]+?)(?: (?:lookupName|packageName)=(?<packageName>[^\\s]+?))?(?: versioning=(?<versioning>[^\\s]+?))?(?: extractVersion=(?<extractVersion>[^\\s]+?))?\\s+(?:default|[A-Za-z0-9_]*-?version)\\s*:\\s*[\"']?(?<currentValue>.+?)[\"']?\\s"
+      ]
+    }
+  ]
+}
