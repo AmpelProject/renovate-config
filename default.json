@@ -2,7 +2,8 @@
   "extends": [
     "config:base",
     ":semanticCommits",
-    ":semanticCommitTypeAll(chore)"
+    ":semanticCommitTypeAll(chore)",
+    "helpers:pinGitHubActionDigests"
   ],
   "schedule": "every 4th week on Thursday before 10am",
   "automerge": true,
