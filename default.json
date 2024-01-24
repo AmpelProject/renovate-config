@@ -1,7 +1,8 @@
 {
   "extends": [
     "config:base",
-    ":semanticCommits"
+    ":semanticCommits",
+    ":semanticCommitTypeAll(chore)"
   ],
   "schedule": "every 4th week on Thursday before 10am",
   "automerge": true,
@@ -11,25 +12,28 @@
     "schedule": ["every 8th week on Thursday before 10am"]
   },
   "masterIssue": true,
-  "rangeStrategy": "widen",
+  "rangeStrategy": "update-lockfile",
   "packageRules": [
+    {
+      "matchUpdateTypes": ["major"],
+      "automerge": false,
+      "semanticCommitType": "fix"
+    },
     {
       "matchDepTypes": ["dev-dependencies"],
       "groupName": "dev dependencies",
-      "rangeStrategy": "bump"
+      "rangeStrategy": "bump",
+      "semanticCommitType": "chore"
     },
     {
       "matchManagers": ["github-actions"],
       "groupName": "actions",
-      "rangeStrategy": "auto"
+      "rangeStrategy": "auto",
+      "semanticCommitType": "chore"
     },
     {
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "groupName": "minor updates"
-    },
-    {
-      "matchUpdateTypes": ["major"],
-      "automerge": false
     },
     {
       "matchPackagePatterns": ["^ampel-.*"],
