@@ -14,7 +14,7 @@
   },
   "masterIssue": true,
   "rangeStrategy": "update-lockfile",
-  "enabledManagers": ["github-actions", "poetry"],
+  "enabledManagers": ["github-actions", "poetry", "regex"],
   "useBaseBranchConfig": "merge",
   "packageRules": [
     {
