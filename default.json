@@ -15,6 +15,7 @@
   "masterIssue": true,
   "rangeStrategy": "update-lockfile",
   "enabledManagers": ["github-actions", "poetry"],
+  "useBaseBranchConfig": "merge",
   "packageRules": [
     {
       "matchUpdateTypes": ["major"],
