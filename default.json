@@ -42,7 +42,7 @@
       "matchUpdateTypes": ["minor"],
       "matchDatasources": ["python-version"],
       "groupName": "python",
-      "semanticCommitType": "fix",
+      "semanticCommitType": "fix"
     },
     {
       "matchPackagePatterns": ["^ampel-.*"],
