@@ -23,11 +23,6 @@
       "semanticCommitType": "fix"
     },
     {
-      "matchUpdateTypes": ["minor"],
-      "matchDatasources": ["python-version"],
-      "semanticCommitType": "fix"
-    },
-    {
       "matchDepTypes": ["dev-dependencies"],
       "groupName": "dev dependencies",
       "rangeStrategy": "bump",
@@ -42,6 +37,12 @@
     {
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "groupName": "minor updates"
+    },
+    {
+      "matchUpdateTypes": ["minor"],
+      "matchDatasources": ["python-version"],
+      "groupName": "python",
+      "semanticCommitType": "fix",
     },
     {
       "matchPackagePatterns": ["^ampel-.*"],
