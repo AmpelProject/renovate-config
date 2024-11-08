@@ -9,8 +9,7 @@
   "automerge": true,
   "automergeType": "branch",
   "lockFileMaintenance": {
-    "enabled": true,
-    "schedule": ["every 8th week on Thursday before 10am"]
+    "enabled": false
   },
   "masterIssue": true,
   "rangeStrategy": "update-lockfile",
