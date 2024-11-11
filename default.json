@@ -44,6 +44,13 @@
       "semanticCommitType": "fix"
     },
     {
+      "matchUpdateTypes": ["minor"],
+      "matchDatasources": ["conda"],
+      "matchPackageNames": ["conda-forge/python"],
+      "groupName": "python",
+      "semanticCommitType": "fix"
+    },
+    {
       "matchPackagePatterns": ["^ampel-.*"],
       "schedule": null,
       "groupName": "ampel packages",
