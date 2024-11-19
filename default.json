@@ -40,15 +40,7 @@
     },
     {
       "matchUpdateTypes": ["minor"],
-      "matchDatasources": ["python-version"],
-      "groupName": "python",
-      "rangeStrategy": "widen",
-      "semanticCommitType": "fix"
-    },
-    {
-      "matchUpdateTypes": ["minor"],
-      "matchDatasources": ["conda"],
-      "matchPackageNames": ["conda-forge/python"],
+      "matchPackageNames": ["python", "conda-forge/python"],
       "groupName": "python",
       "rangeStrategy": "widen",
       "semanticCommitType": "fix"
