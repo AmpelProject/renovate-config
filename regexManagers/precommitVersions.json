@@ -1,0 +1,13 @@
+{
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": [
+        "(^|/)\\.pre-commit-config\\.ya?ml$"
+      ],
+      "matchStrings": [
+        "# renovate: datasource=(?<datasource>[a-z-.]+?) depName=(?<depName>[^\\s]+?)(?: (?:lookupName|packageName)=(?<packageName>[^\\s]+?))?(?: versioning=(?<versioning>[^\\s]+?))?(?: extractVersion=(?<extractVersion>[^\\s]+?))?\\s+(?:rev)\\s*:\\s*[\"']?v?(?<currentValue>.+?)[\"']?\\s"
+      ]
+    }
+  ]
+}
