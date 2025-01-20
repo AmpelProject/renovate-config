@@ -1,6 +1,22 @@
 # gitHubActionsVersions
 
-like regexManagers:githubActionsVersions, but also matches keys of the form `default:`, `foo-version:` and `version:` in addition to `FOO_VERSION:`
+like regexManagers:githubActionsVersions, but matches any (alphanumeric) key or
+array item. The datasource and depName tags are required; packageName,
+versioning, and extractVersion are optional. Examples:
+
+```
+      # renovate: datasource=python-version depName=python versioning=python
+      python-version: "3.13"
+```
+
+```
+    strategy:
+      matrix:
+        python-version:
+          - "3.10"
+          # renovate: datasource=python-version depName=python versioning=python
+          - "3.13"
+```
 
 # dockerfileVersions
 
