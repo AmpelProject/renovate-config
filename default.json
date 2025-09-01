@@ -28,13 +28,6 @@
       "semanticCommitType": "fix"
     },
     {
-      "matchDepTypes": ["dev-dependencies"],
-      "matchUpdateTypes": ["major", "minor", "patch", "pin", "digest"],
-      "groupName": "dev dependencies",
-      "rangeStrategy": "bump",
-      "semanticCommitType": "chore"
-    },
-    {
       "matchManagers": ["github-actions"],
       "groupName": "actions",
       "rangeStrategy": "auto",
@@ -43,6 +36,13 @@
     {
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "groupName": "minor updates"
+    },
+    {
+      "matchDepTypes": ["dev-dependencies"],
+      "matchUpdateTypes": ["major", "minor", "patch", "pin", "digest"],
+      "groupName": "dev dependencies",
+      "rangeStrategy": "bump",
+      "semanticCommitType": "chore"
     },
     {
       "matchUpdateTypes": ["minor"],
