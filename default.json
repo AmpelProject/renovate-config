@@ -38,7 +38,7 @@
       "groupName": "minor updates"
     },
     {
-      "matchDepTypes": ["dev-dependencies"],
+      "matchDepTypes": ["dev-dependencies", "dev"],
       "matchUpdateTypes": ["major", "minor", "patch", "pin", "digest"],
       "groupName": "dev dependencies",
       "rangeStrategy": "bump",
