@@ -39,8 +39,8 @@
     },
     {
       "matchDepTypes": ["dev-dependencies", "dev"],
-      "matchUpdateTypes": ["major", "minor", "patch", "pin", "digest"],
       "groupName": "dev dependencies",
+      "automerge": true,
       "rangeStrategy": "bump",
       "semanticCommitType": "chore"
     },
