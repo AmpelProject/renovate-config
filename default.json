@@ -29,12 +29,6 @@
       "semanticCommitType": "fix"
     },
     {
-      "matchManagers": ["github-actions"],
-      "groupName": "actions",
-      "rangeStrategy": "auto",
-      "semanticCommitType": "chore"
-    },
-    {
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "groupName": "minor updates"
     },
@@ -57,6 +51,16 @@
       "schedule": null,
       "groupName": "ampel packages",
       "rangeStrategy": "bump"
+    },
+    {
+      "matchManagers": ["github-actions"],
+      "groupName": "actions",
+      "rangeStrategy": "auto",
+      "semanticCommitType": "chore"
+    },
+    {
+      "matchManagers": ["copier"],
+      "groupName": "copier"
     }
   ]
 }
